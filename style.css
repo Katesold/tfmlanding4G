@@ -55,6 +55,11 @@
     color: black;
     font-family: 'MB Empire-Book', sans-serif;
 }
+.mainText{
+    text-align: left;
+    padding: 10px 40px 20px 20px;
+    max-width: 700px;
+}
 .Cont5G{
     text-align: right;
     padding-top: 80px;
@@ -68,28 +73,19 @@
 }
 .Cont5G h2{
     font-family: 'MB Empire-Book', sans-serif;
-    width: 300px;
+    /* width: 300px;
     position: absolute;
     right: 20px;
     line-height: 1.3em;
+    padding-top: 10px; */
+    line-height: 1.2em;
     padding-top: 10px;
 }
 .inside5G{
     /* display: flex; */
     justify-content: flex-end;
 }
-.inside5G img{
-    align-self: center;
-    animation: title5G 0.5s;
-    position: relative;
-    animation-timing-function: ease-in-out;
-}
 
-
-@keyframes title5G{
-    0%   { left: -100px; opacity: 0;}
-    100% { left: 0px; opacity: 1;}
-  }
 
 
   @keyframes jumpy {
@@ -130,11 +126,11 @@
     display: block;
     font-size: 16px;
     cursor: pointer;
-    background-color: #5f6dac;
-    margin: 100px auto;
+    background-color: #01adaa;
+    margin: 50px auto;
 }
 .btn:hover{
-    background-color: #313a5f;
+    background-color: #18807e;
     transition-duration: 1s;
 }
 .pkgBtn{
@@ -201,10 +197,10 @@
     padding: 50px 0;
 }
 .explain5G h2{
-    color: #5f6dac;
+    color: #01adaa;
     font-size: 2em;
     font-family: 'MB Empire-Book', sans-serif;
-    padding: 80px 20px 20px;
+    padding: 20px;
 }
 .partners img{
     height: 50px;
@@ -217,17 +213,32 @@
 }
 .business{
     padding: 0 20px;
+    line-height: 1.1em;
 }
 .business h3{
-    color: #5f6dac;
+    color: #01adaa;
     font-family: 'MB Empire-Bold', sans-serif;
 }
 .business p{
     font-family: 'MB Empire-Book', sans-serif;
     padding: 10px 0;
 }
+.business ul li{
+    font-family: 'MB Empire-Book', sans-serif;
+    padding: 5px 20px;
+}
+.business ul{
+    list-style-position: outside;
+}
+.business ul li:before{
+    content: '\2022 ';
+    color: #01adaa;
+    padding-right: 0.5em;
+    margin-left: -1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .prices5G{
-    background-color: #5f6dac;
+    background-color: #01adaa;
 }
 .prices5G h2{
     color: white;
@@ -259,18 +270,18 @@
     left: 17.5%;
 }
 .package h3{
-    color: #5f6dac;
+    color: #01adaa;
     font-family: 'MB Empire-Book', sans-serif;
 }
 .package h4{
-    color: #5f6dac;
+    color: #01adaa;
     font-family: 'MB Empire-Book', sans-serif;
     padding-bottom: 10px;
     padding-top: 10px;
 }
 .package ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #5f6dac; /* Change the color */
+    color: #01adaa; /* Change the color */
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */ 
     width: 1em; /* Also needed for space (tweak if needed) */
@@ -301,7 +312,7 @@
     padding: 5px;
     cursor: pointer;
     width: 170px;
-    color: #5f6dac;
+    color: #01adaa;
 }
 .TC span{
     transform: rotate(90deg);
@@ -326,7 +337,7 @@
     width: 100%;
 }
 .aequosNews h2{
-    color: #5f6dac;
+    color: #01adaa;
     padding: 80px 20px 50px;
     font-family: 'MB Empire-Book', sans-serif;
     font-size: 2em;
@@ -363,7 +374,7 @@ footer{
 }
 .foot h2{
     font-family: 'MB Empire-Bold', sans-serif;
-    color: #5f6dac;
+    color: #01adaa;
     padding: 20px 0;
 }
 .foot p, .foot a{
@@ -406,8 +417,8 @@ footer{
     position: absolute;
     right: 0;
 }
-.purpleTriangle {
-    border-color: transparent #5f6dac;
+.greenTriangle {
+    border-color: transparent #01adaa;
     border-style: solid;
     border-width: 50px 50px 00px 0px;
     position: absolute;
@@ -437,7 +448,7 @@ footer{
         justify-content: space-between;
     }
     .Cont5G h1{
-        font-size: 4em;
+        font-size: 3em;
     }
     #tfmpurple{
         padding: 60px 20px 0;
@@ -451,13 +462,7 @@ footer{
 }
 
 @media screen and (min-width: 600px){
-    .mainView{
-        background-image: url("images/firstgirlwithbg-compressor.png");
-        height: 100%;
-        background-repeat: no-repeat;
-    }
     .Cont5G h1{
-        font-size: 2em;
         padding-right: 20px;
     }
     .btn{
@@ -470,6 +475,12 @@ footer{
 
 
 @media screen and (min-width: 800px){
+    .mainView{
+        background-image: url("images/topgirl.png");
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
     .contactInfoTop{
         display: flex;
     }
@@ -481,12 +492,16 @@ footer{
     }
     .Cont5G{
         padding-top: 50px;
+        display: flex;
     }
     .Cont5G h2{
         padding-right: 10%;
     }
     .Cont5G h1 {
         font-size: 3em;
+    }
+    .filler{
+        width: 65%;
     }
     .btn{
         margin: 46px auto;
@@ -528,6 +543,8 @@ footer{
    .explain5G h2{
         padding: 50px;
         text-align: center;
+        max-width: 800px;
+        margin: auto;
    }
    .aequosImg{
        display: flex;
@@ -559,10 +576,11 @@ footer{
         margin: 20px 30px;
    }
    .explain5G{
-       background-image: url("images/secondgirl-compressor.png");
+       background-image: url("images/mantfm.png");
        background-repeat: no-repeat;
        background-size: 300px;
        background-position-y: bottom;
+       padding-bottom: 290px;
    }
   
 }
@@ -586,12 +604,11 @@ footer{
     .Cont5G h2{
         text-align: left;
         width: 660px;
-        font-size: 2em;
+        font-size: 1.5em;
         position: static;
-        padding-left: 20px;
     }
     .explain5G{
-        background-size: 350px;
+        background-size: 400px;
     }
     .filler{
         width: 30%;
