@@ -1,0 +1,608 @@
+/* html, body, p, h1, h2, h3, h4, img{
+    padding: 0;
+    margin: 0;
+} */
+@charset "utf-8";a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:block}.none{display:none}
+
+@font-face {
+    font-family: MB Empire-Book;
+    src: url("M-B Creative - MBEmpire-Book.otf") format("opentype");
+}
+@font-face {
+    font-family: MB Empire-Bold;
+    src: url("M-B Creative - MBEmpire-Bold.otf") format("opentype");
+}
+
+
+@font-face {font-family: 'HongKong-Medium';src: url('webfonts/3796D2_0_0.eot');src: url('webfonts/3796D2_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3796D2_0_0.woff2') format('woff2'),url('webfonts/3796D2_0_0.woff') format('woff'),url('webfonts/3796D2_0_0.ttf') format('truetype');}
+
+
+.mainNavCont{
+    background-color: white;
+}
+.navCont{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contactNav{
+    text-align: right;
+    padding-right: 10px;
+    margin: auto 0;
+    /* font-size: 2em; */
+    /* display: flex; */
+}
+.contactNav span{
+    display: none;
+}
+
+.contactNav p, .contactNav span{
+    padding: 5px;
+    font-family: 'MB Empire-Book', sans-serif;
+}
+.contactNav img{
+    padding: 3px;
+    align-self: center;
+}
+.tfmLogo{
+    padding: 20px;
+    align-self: center;
+}
+.contactNav a{
+    padding: 5px 5px 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'MB Empire-Book', sans-serif;
+}
+.Cont5G{
+    text-align: right;
+    padding-top: 80px;
+}
+.Cont5G h1{
+    font-family: 'HongKong-Medium';
+    font-size: 4em;
+    /* text-align: left; */
+    padding-right: 10px;
+    font-size: 2em;
+}
+.Cont5G h2{
+    font-family: 'MB Empire-Book', sans-serif;
+    width: 300px;
+    position: absolute;
+    right: 20px;
+    line-height: 1.3em;
+    padding-top: 10px;
+}
+.inside5G{
+    /* display: flex; */
+    justify-content: flex-end;
+}
+.inside5G img{
+    align-self: center;
+    animation: title5G 0.5s;
+    position: relative;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes title5G{
+    0%   { left: -100px; opacity: 0;}
+    100% { left: 0px; opacity: 1;}
+  }
+
+
+  @keyframes jumpy {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    } 
+    100%{
+        transform: translateY(0px);
+    }
+
+  }
+  @keyframes jumpy2 {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    } 
+    100%{
+        transform: translateY(0px);
+    }
+
+  }
+
+
+.contactInfoTop{
+    padding-bottom: 10px;
+}
+.btn{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #5f6dac;
+    margin: 100px auto;
+}
+.btn:hover{
+    background-color: #313a5f;
+    transition-duration: 1s;
+}
+.pkgBtn{
+    margin: 20px auto;
+}
+.pkgBtn a{
+    text-decoration: none;
+    color: white;
+}
+#firstBtn a{
+    text-decoration: none;
+    color: white;
+}
+.mapSection{
+    background-color: #5f6dac;
+    color: white;
+    background-image: url("images/map2-compressor.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 238px 314px;
+    background-size: 328px;
+}
+.mapMainTitle h3{
+    font-family: 'HongKong-Medium', sans-serif;
+    padding: 0 20px;
+    margin-top: -25px;
+    font-size: 3em;
+}
+.mapMainTitle h2{
+    font-family: 'MB Empire-Book', sans-serif;
+    padding: 20px;
+}
+.mapHead img{
+    padding: 0 5px;
+}
+.mapLocations ul li{
+    padding: 5px 0;
+    font-family: 'MB Empire-Book', sans-serif;
+}
+.listLoc{
+    padding: 20px;
+}
+.listLoc h3{
+    padding: 10px 0;
+    font-family: 'MB Empire-Bold', sans-serif;
+}
+#biggerPoint:hover{
+    animation: jumpy 2s infinite linear;
+}
+#smallerPoint{
+    height: 44px;
+    top: 27px;
+    padding-bottom: 28px;
+    position: relative;
+}
+#smallerPoint:hover{
+    
+    animation: jumpy2 2s infinite linear;
+}
+.map5G{
+    padding: 50px 0;
+}
+.explain5G{
+    padding: 50px 0;
+}
+.explain5G h2{
+    color: #5f6dac;
+    font-size: 2em;
+    font-family: 'MB Empire-Book', sans-serif;
+    padding: 80px 20px 20px;
+}
+.partners img{
+    height: 50px;
+    padding: 0 10px;
+}
+.partners{
+    display: block;
+    position: absolute;
+    right: 20px;
+}
+.business{
+    padding: 0 20px;
+}
+.business h3{
+    color: #5f6dac;
+    font-family: 'MB Empire-Bold', sans-serif;
+}
+.business p{
+    font-family: 'MB Empire-Book', sans-serif;
+    padding: 10px 0;
+}
+.prices5G{
+    background-color: #5f6dac;
+}
+.prices5G h2{
+    color: white;
+    font-family: 'MB Empire-Book', sans-serif;
+    font-size: 2em;
+    padding: 50px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.packagesCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.package{
+    background-color: white;
+    padding: 20px;
+    max-width: 290px;
+    margin: 20px;
+    position: relative;
+    height: 480px;
+}
+.package button{
+    position: absolute;
+    bottom: 0;
+    left: 17.5%;
+}
+.package h3{
+    color: #5f6dac;
+    font-family: 'MB Empire-Book', sans-serif;
+}
+.package h4{
+    color: #5f6dac;
+    font-family: 'MB Empire-Book', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.package ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #5f6dac; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */ 
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-family: Arial;
+}
+#insideUL, #insideUL2{
+    list-style-type: circle;
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+}
+#insideUL li::before{
+    content: "";
+}
+#insideUL2 li::before{
+    content: "";
+}
+.package ul li{
+    padding-left: 10px;
+    font-family: 'MB Empire-Book', sans-serif;
+    line-height: 1.1em;
+}
+.TC{
+    font-family: 'MB Empire-Book', sans-serif;
+    padding: 5px;
+    cursor: pointer;
+    width: 170px;
+    color: #5f6dac;
+}
+.TC span{
+    transform: rotate(90deg);
+    display: inline-block;
+    top: 2px;
+    position: relative;
+}
+.terms{
+    /* display: none; */
+    opacity: 0;
+    height: 0;
+    font-size: 0.8em;
+    /* transition-duration: 1s; */
+}
+.termsVis{
+    font-size: 0.8em;
+    /* display: block; */
+    /* opacity: 1; */
+    /* transition-duration: 1s; */
+}
+.aequosImg img{
+    width: 100%;
+}
+.aequosNews h2{
+    color: #5f6dac;
+    padding: 80px 20px 50px;
+    font-family: 'MB Empire-Book', sans-serif;
+    font-size: 2em;
+}
+.aequosNews{
+    position: relative;
+}
+.aequosImg h3{
+    font-family: 'MB Empire-Bold', sans-serif;
+    padding: 20px;
+}
+.aequosImg p{
+    font-family: 'MB Empire-Book', sans-serif;
+    padding: 0 20px 20px;
+}
+.aequosImg a{
+    padding: 20px;
+    color: black;
+}
+.aequosImg{
+    padding-bottom: 80px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.foot{
+    padding: 20px;
+    max-width: 250px;
+}
+.foot h2{
+    font-family: 'MB Empire-Bold', sans-serif;
+    color: #5f6dac;
+    padding: 20px 0;
+}
+.foot p, .foot a{
+    font-family: 'MB Empire-Book', sans-serif;
+    color:white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+.foot a{
+    display: flex;
+}
+.social{
+    display: flex;
+}
+.social img{
+    align-self: center;
+    padding-right: 10px;
+}
+#tfmpurple{
+    padding: 10px 20px 0;
+}
+.aequosDesc{
+    display: flex;
+    flex-direction: column;
+}
+.aequosDesc a{
+    font-family: 'MB Empire-Book', sans-serif;
+}
+.blackTriangle {
+    border-color: transparent rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0px 150px 150px 0px;
+    position: absolute;
+    right: 0;
+}
+.whiteTriangle {
+    border-color: transparent rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 0px 150px 150px 0px;
+    position: absolute;
+    right: 0;
+}
+.purpleTriangle {
+    border-color: transparent #5f6dac;
+    border-style: solid;
+    border-width: 50px 50px 00px 0px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.blackDownTriangle{
+    border-color: transparent rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 150px 150px 0px 0px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+@media screen and (min-width: 500px){
+    .contactNav{
+        font-size: 1em;
+        display: block;
+    }
+    .navCont{
+        justify-content: space-between;
+    }
+    .Cont5G h1{
+        font-size: 4em;
+    }
+    #tfmpurple{
+        padding: 60px 20px 0;
+    }
+    .package button{
+        left: 21.5%;
+    }
+    .pkgBtn{
+        margin: 30px auto;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .mainView{
+        background-image: url("images/firstgirlwithbg-compressor.png");
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    .Cont5G h1{
+        font-size: 2em;
+        padding-right: 20px;
+    }
+    .btn{
+        margin: 70px auto 41px;
+    }
+    .package button{
+        margin: 50px auto 30px;
+    }
+}
+
+
+@media screen and (min-width: 800px){
+    .contactInfoTop{
+        display: flex;
+    }
+    .contactNav span{
+        display: block;
+    }
+    .inside5G{
+        padding-right: 10%;
+    }
+    .Cont5G{
+        padding-top: 50px;
+    }
+    .Cont5G h2{
+        padding-right: 10%;
+    }
+    .Cont5G h1 {
+        font-size: 3em;
+    }
+    .btn{
+        margin: 46px auto;
+    }
+    .mapSection{
+        background-image: url("images/map2-compressor.png");
+    }
+    .mapHead{
+        display: flex;
+    }
+    .mapMainTitle h3{
+        padding: 20px 0 0;
+        margin-top: 0;
+        font-size: 2em;
+        max-width: 50px;
+    }
+    .mapMainTitle h2{
+        padding: 0;
+        max-width: 300px;
+    }
+    .mapLocations{
+        display: flex;
+    }
+   .mapSection{
+        background-position: 506px -219px;
+        background-size: 570px;
+    }
+   .map5G{
+       padding: 50px;
+   }
+   .businessCont{
+       display: flex;
+       justify-content: center;
+       padding-bottom: 80px;
+   }
+   .business{
+       max-width: 350px;
+   }
+   .explain5G h2{
+        padding: 50px;
+        text-align: center;
+   }
+   .aequosImg{
+       display: flex;
+       padding: 20px 0 80px;
+       justify-content: center;
+   }
+   .aequosImg img{
+        width: 600px;
+   }
+   .aequosImg a {
+        padding: 0 20px;
+    }
+   .aequosDesc{
+        padding-left: 20px;
+        max-width: 402px;
+   }
+   .aequosNews h2{
+        font-size: 3em;
+        padding-left: 10%;
+   }
+   .business h3{
+        padding: 10px 0 5px;
+   }
+   .packagesCont{
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .package{
+        margin: 20px 30px;
+   }
+   .explain5G{
+       background-image: url("images/secondgirl-compressor.png");
+       background-repeat: no-repeat;
+       background-size: 300px;
+       background-position-y: bottom;
+   }
+  
+}
+
+@media screen and (min-width: 1150px){
+    .inside5G{
+        display: flex;
+        padding-right: 10px;
+        justify-content: flex-start;
+    }
+    .Cont5G h1{
+        font-family: 'HongKong-Medium', sans-serif;
+        font-size: 4em;
+        text-align: left;
+        padding-top: 16px;
+    }
+    .Cont5G{
+        padding-top: 100px;
+        display: flex;
+    }
+    .Cont5G h2{
+        text-align: left;
+        width: 660px;
+        font-size: 2em;
+        position: static;
+        padding-left: 20px;
+    }
+    .explain5G{
+        background-size: 350px;
+    }
+    .filler{
+        width: 30%;
+    }
+    .mainText{
+        width: 70%;
+    }
+    .mapSection{
+        background-position: 610px -219px;
+    }
+    footer{
+        justify-content: flex-start;
+    }
+}
