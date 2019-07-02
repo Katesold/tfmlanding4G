@@ -27,7 +27,6 @@
     flex-wrap: wrap;
 }
 .contactNav{
-    text-align: right;
     padding-right: 10px;
     margin: auto 0;
     /* font-size: 2em; */
@@ -60,18 +59,18 @@
     padding: 10px 40px 20px 20px;
     max-width: 700px;
 }
-.Cont5G{
+.Cont4G{
     text-align: right;
     padding-top: 80px;
 }
-.Cont5G h1{
+.Cont4G h1{
     font-family: 'HongKong-Medium';
     font-size: 4em;
     /* text-align: left; */
     padding-right: 10px;
     font-size: 2em;
 }
-.Cont5G h2{
+.Cont4G h2{
     font-family: 'MB Empire-Book', sans-serif;
     /* width: 300px;
     position: absolute;
@@ -81,7 +80,7 @@
     line-height: 1.2em;
     padding-top: 10px;
 }
-.inside5G{
+.inside4G{
     /* display: flex; */
     justify-content: flex-end;
 }
@@ -190,13 +189,13 @@
     
     animation: jumpy2 2s infinite linear;
 }
-.map5G{
+.map4G{
     padding: 50px 0;
 }
-.explain5G{
+.explain4G{
     padding: 50px 0;
 }
-.explain5G h2{
+.explain4G h2{
     color: #01adaa;
     font-size: 2em;
     font-family: 'MB Empire-Book', sans-serif;
@@ -222,6 +221,7 @@
 .business p{
     font-family: 'MB Empire-Book', sans-serif;
     padding: 10px 0;
+    line-height: 1.2em;
 }
 .business ul li{
     font-family: 'MB Empire-Book', sans-serif;
@@ -237,10 +237,10 @@
     margin-left: -1em;
     font-family: Arial, Helvetica, sans-serif;
 }
-.prices5G{
+.prices4G{
     background-color: #01adaa;
 }
-.prices5G h2{
+.prices4G h2{
     color: white;
     font-family: 'MB Empire-Book', sans-serif;
     font-size: 2em;
@@ -262,7 +262,8 @@
     max-width: 290px;
     margin: 20px;
     position: relative;
-    height: 480px;
+    height: 500px;
+    transition: all .5s ease;
 }
 .package button{
     position: absolute;
@@ -288,7 +289,7 @@
     margin-left: -1em; /* Also needed for space (tweak if needed) */
     font-family: Arial;
 }
-#insideUL, #insideUL2{
+#insideUL, #insideUL2, #insideUL3, #insideUL4{
     list-style-type: circle;
     margin-block-start: 0.5em;
     margin-block-end: 1em;
@@ -296,7 +297,10 @@
     margin-inline-end: 0px;
     padding-inline-start: 10px;
 }
-#insideUL li::before{
+#insideUL li, #insideUL2 li, #insideUL3 li, #insideUL4 li{
+    font-size: 0.9em;
+}
+#insideUL li::before, #insideUL3 li::before, #insideUL4 li::before{
     content: "";
 }
 #insideUL2 li::before{
@@ -321,17 +325,12 @@
     position: relative;
 }
 .terms{
-    /* display: none; */
     opacity: 0;
-    height: 0;
-    font-size: 0.8em;
-    /* transition-duration: 1s; */
+
+    font-size: 0.9em;
 }
 .termsVis{
-    font-size: 0.8em;
-    /* display: block; */
-    /* opacity: 1; */
-    /* transition-duration: 1s; */
+    font-size: 0.9em;
 }
 .aequosImg img{
     width: 100%;
@@ -352,6 +351,7 @@
 .aequosImg p{
     font-family: 'MB Empire-Book', sans-serif;
     padding: 0 20px 20px;
+    line-height: 1.2em;
 }
 .aequosImg a{
     padding: 20px;
@@ -443,11 +443,12 @@ footer{
     .contactNav{
         font-size: 1em;
         display: block;
+        text-align: right;
     }
     .navCont{
         justify-content: space-between;
     }
-    .Cont5G h1{
+    .Cont4G h1{
         font-size: 3em;
     }
     #tfmpurple{
@@ -462,7 +463,7 @@ footer{
 }
 
 @media screen and (min-width: 600px){
-    .Cont5G h1{
+    .Cont4G h1{
         padding-right: 20px;
     }
     .btn{
@@ -487,17 +488,17 @@ footer{
     .contactNav span{
         display: block;
     }
-    .inside5G{
+    .inside4G{
         padding-right: 10%;
     }
-    .Cont5G{
+    .Cont4G{
         padding-top: 50px;
         display: flex;
     }
-    .Cont5G h2{
+    .Cont4G h2{
         padding-right: 10%;
     }
-    .Cont5G h1 {
+    .Cont4G h1 {
         font-size: 3em;
     }
     .filler{
@@ -529,7 +530,7 @@ footer{
         background-position: 506px -219px;
         background-size: 570px;
     }
-   .map5G{
+   .map4G{
        padding: 50px;
    }
    .businessCont{
@@ -540,7 +541,7 @@ footer{
    .business{
        max-width: 350px;
    }
-   .explain5G h2{
+   .explain4G h2{
         padding: 50px;
         text-align: center;
         max-width: 800px;
@@ -575,7 +576,7 @@ footer{
    .package{
         margin: 20px 30px;
    }
-   .explain5G{
+   .explain4G{
        background-image: url("images/mantfm.png");
        background-repeat: no-repeat;
        background-size: 300px;
@@ -586,28 +587,28 @@ footer{
 }
 
 @media screen and (min-width: 1150px){
-    .inside5G{
+    .inside4G{
         display: flex;
         padding-right: 10px;
         justify-content: flex-start;
     }
-    .Cont5G h1{
+    .Cont4G h1{
         font-family: 'HongKong-Medium', sans-serif;
         font-size: 4em;
         text-align: left;
         padding-top: 16px;
     }
-    .Cont5G{
+    .Cont4G{
         padding-top: 100px;
         display: flex;
     }
-    .Cont5G h2{
+    .Cont4G h2{
         text-align: left;
         width: 660px;
         font-size: 1.5em;
         position: static;
     }
-    .explain5G{
+    .explain4G{
         background-size: 400px;
     }
     .filler{
