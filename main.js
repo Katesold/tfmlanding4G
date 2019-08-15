@@ -53,25 +53,25 @@ function package2Off(){
 
 
 
-tc.addEventListener('mouseover', function (){
+// tc.addEventListener('mouseover', function (){
 
-    package1();
-});
+//     package1();
+// });
 
-tc.addEventListener('mouseleave', function (){
+// tc.addEventListener('mouseleave', function (){
 
-    package1Off();
-});
+//     package1Off();
+// });
 
 
 
-tc2.addEventListener('mouseover', function (){
+// tc2.addEventListener('mouseover', function (){
 
-    package2();
-});
+//     package2();
+// });
 
-tc2.addEventListener('mouseleave', function (){
+// tc2.addEventListener('mouseleave', function (){
 
-    package2Off();
-});
+//     package2Off();
+// });
 

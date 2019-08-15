@@ -1,8 +1,7 @@
-/* html, body, p, h1, h2, h3, h4, img{
-    padding: 0;
-    margin: 0;
-} */
 @charset "utf-8";a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:block}.none{display:none}
+p, h2{
+    line-height: 1.2em;
+}
 
 @font-face {
     font-family: MB Empire-Book;
@@ -83,6 +82,18 @@
 .inside4G{
     /* display: flex; */
     justify-content: flex-end;
+}
+.mainText span{
+    font-family: 'Arial', sans-serif;
+}
+#mainTerms{
+    font-family: 'MB Empire-Book', sans-serif;
+    margin: auto;
+    padding: 20px;
+    font-size: 0.8em;
+}
+#mainTerms span{
+    font-family: 'Arial', sans-serif;
 }
 
 
@@ -226,6 +237,7 @@
 .business ul li{
     font-family: 'MB Empire-Book', sans-serif;
     padding: 5px 20px;
+    line-height: 1.2em;
 }
 .business ul{
     list-style-position: outside;
@@ -253,7 +265,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 0;
 }
 
 .package{
@@ -262,24 +274,31 @@
     max-width: 290px;
     margin: 20px;
     position: relative;
-    height: 500px;
+    height: 570px;
     transition: all .5s ease;
+}
+.package2{
+    background-color: #b3e6e5;
+    height: 400px;
 }
 .package button{
     position: absolute;
     bottom: 0;
-    left: 17.5%;
 }
 .package h3{
     color: #01adaa;
     font-family: 'MB Empire-Book', sans-serif;
+    line-height: 1.2em;
 }
+
 .package h4{
     color: #01adaa;
     font-family: 'MB Empire-Book', sans-serif;
     padding-bottom: 10px;
-    padding-top: 10px;
+    font-size: 0.8em;
+    line-height: 1.2em;
 }
+
 .package ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #01adaa; /* Change the color */
@@ -288,6 +307,10 @@
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
     font-family: Arial;
+}
+
+.package2 img{
+    max-width: 265px;
 }
 #insideUL, #insideUL2, #insideUL3, #insideUL4{
     list-style-type: circle;
@@ -309,7 +332,9 @@
 .package ul li{
     padding-left: 10px;
     font-family: 'MB Empire-Book', sans-serif;
-    line-height: 1.1em;
+    line-height: 1.2em;
+    padding-top: 3px;
+    max-width: 340px;
 }
 .TC{
     font-family: 'MB Empire-Book', sans-serif;
@@ -370,7 +395,8 @@ footer{
 }
 .foot{
     padding: 20px;
-    max-width: 250px;
+    /* max-width: 250px; */
+    max-width: 186px;
 }
 .foot h2{
     font-family: 'MB Empire-Bold', sans-serif;
@@ -385,6 +411,10 @@ footer{
 }
 .foot a{
     display: flex;
+}
+#footerLogo{
+    width: 100%;
+    text-align: center;
 }
 .social{
     display: flex;
@@ -422,9 +452,10 @@ footer{
     border-style: solid;
     border-width: 50px 50px 00px 0px;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -1px;
+    bottom: -1px;
 }
+
 .blackDownTriangle{
     border-color: transparent rgb(0, 0, 0);
     border-style: solid;
@@ -433,9 +464,32 @@ footer{
     right: 0;
     bottom: 0;
 }
+#whiteline{
+    position: absolute;
+    left: 239px;
+    top: 374px;
+}
+#whiteline2{
+    position: absolute;
+    left: 239px;
+    top: 374px;
+}
 
 
-
+@media screen and (min-width: 375px){
+    #whiteline{
+        position: relative;
+        top: 39px;
+        float: right;
+        left: 23px;
+    }
+    #whiteline2{
+        position: relative;
+        top: 28px;
+        float: right;
+        left: 23px;
+    }
+}
 
 
 
@@ -454,11 +508,33 @@ footer{
     #tfmpurple{
         padding: 60px 20px 0;
     }
-    .package button{
-        left: 21.5%;
-    }
     .pkgBtn{
         margin: 30px auto;
+    }
+    .package{
+        height: 500px;
+    }
+    .package2{
+        height: 400px;
+    }
+    .packagesCont{
+        padding: 50px;
+    }
+    #whiteline{
+        position: absolute;
+        left: 264px;
+        top: 474px;
+    }
+    #whiteline2{
+        position: absolute;
+        left: 264px;
+        top: 474px;
+    }
+    #footerLogo{
+        width: auto;
+    }
+    .foot{
+        max-width: 250px;
     }
 }
 
@@ -481,7 +557,10 @@ footer{
         height: 100%;
         background-repeat: no-repeat;
     }
-
+    #mainTerms{
+        padding: 90px 80px 0;
+        max-width: 800px;
+    }
     .contactInfoTop{
         display: flex;
     }
@@ -575,15 +654,42 @@ footer{
    }
    .package{
         margin: 20px 30px;
-   }
+        height: 450px;
+        width: 425px;
+        max-width: 425px;
+    }
+    .package h3{
+        max-width: 340px;
+    }
+    #price23{
+        padding-top: 20px;
+    }
    .explain4G{
        background-image: url("images/mantfm.png");
        background-repeat: no-repeat;
        background-size: 300px;
        background-position-y: bottom;
-       padding-bottom: 290px;
+       padding-bottom: 140px;
    }
-  
+   #whiteline{
+        position: absolute;
+        left: 399px;
+        top: 374px;
+    }
+    #whiteline2{
+        position: absolute;
+        left: 399px;
+        top: 374px;
+    }
+    .package2{
+        height: 400px;
+    }
+    .package2 img{
+        max-width: 100%;
+    }
+    .foot{
+        padding: 20px 30px;
+    }
 }
 
 @media screen and (min-width: 1150px){
@@ -591,6 +697,19 @@ footer{
         display: flex;
         padding-right: 10px;
         justify-content: flex-start;
+    }
+    #mainTerms{
+        padding: 0 50px 50px;
+    }
+    .package{
+        height: 450px;
+        width: 440px;
+    }
+    .package2{
+        height: 370px;
+    }
+    .package h3{
+        max-width: 370px;
     }
     .Cont4G h1{
         font-family: 'HongKong-Medium', sans-serif;
