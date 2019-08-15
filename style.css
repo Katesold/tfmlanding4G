@@ -1,7 +1,14 @@
+/*
+RESET CSS
+*/
 @charset "utf-8";a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:block}.none{display:none}
 p, h2{
     line-height: 1.2em;
 }
+
+/*
+FONT FACES
+*/
 
 @font-face {
     font-family: MB Empire-Book;
@@ -15,7 +22,9 @@ p, h2{
 
 @font-face {font-family: 'HongKong-Medium';src: url('webfonts/3796D2_0_0.eot');src: url('webfonts/3796D2_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3796D2_0_0.woff2') format('woff2'),url('webfonts/3796D2_0_0.woff') format('woff'),url('webfonts/3796D2_0_0.ttf') format('truetype');}
 
-
+/*
+header infobar
+*/
 .mainNavCont{
     background-color: white;
 }
@@ -28,8 +37,6 @@ p, h2{
 .contactNav{
     padding-right: 10px;
     margin: auto 0;
-    /* font-size: 2em; */
-    /* display: flex; */
 }
 .contactNav span{
     display: none;
@@ -43,6 +50,7 @@ p, h2{
     padding: 3px;
     align-self: center;
 }
+
 .tfmLogo{
     padding: 20px;
     align-self: center;
@@ -58,6 +66,10 @@ p, h2{
     padding: 10px 40px 20px 20px;
     max-width: 700px;
 }
+
+/*
+main contents
+*/
 .Cont4G{
     text-align: right;
     padding-top: 80px;
@@ -65,22 +77,15 @@ p, h2{
 .Cont4G h1{
     font-family: 'HongKong-Medium';
     font-size: 4em;
-    /* text-align: left; */
     padding-right: 10px;
     font-size: 2em;
 }
 .Cont4G h2{
     font-family: 'MB Empire-Book', sans-serif;
-    /* width: 300px;
-    position: absolute;
-    right: 20px;
-    line-height: 1.3em;
-    padding-top: 10px; */
     line-height: 1.2em;
     padding-top: 10px;
 }
 .inside4G{
-    /* display: flex; */
     justify-content: flex-end;
 }
 .mainText span{
@@ -96,32 +101,6 @@ p, h2{
     font-family: 'Arial', sans-serif;
 }
 
-
-
-  @keyframes jumpy {
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-10px);
-    } 
-    100%{
-        transform: translateY(0px);
-    }
-
-  }
-  @keyframes jumpy2 {
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-10px);
-    } 
-    100%{
-        transform: translateY(0px);
-    }
-
-  }
 
 
 .contactInfoTop{
@@ -154,55 +133,7 @@ p, h2{
     text-decoration: none;
     color: white;
 }
-.mapSection{
-    background-color: #5f6dac;
-    color: white;
-    background-image: url("images/map2-compressor.png");
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 238px 314px;
-    background-size: 328px;
-}
-.mapMainTitle h3{
-    font-family: 'HongKong-Medium', sans-serif;
-    padding: 0 20px;
-    margin-top: -25px;
-    font-size: 3em;
-}
-.mapMainTitle h2{
-    font-family: 'MB Empire-Book', sans-serif;
-    padding: 20px;
-}
-.mapHead img{
-    padding: 0 5px;
-}
-.mapLocations ul li{
-    padding: 5px 0;
-    font-family: 'MB Empire-Book', sans-serif;
-}
-.listLoc{
-    padding: 20px;
-}
-.listLoc h3{
-    padding: 10px 0;
-    font-family: 'MB Empire-Bold', sans-serif;
-}
-#biggerPoint:hover{
-    animation: jumpy 2s infinite linear;
-}
-#smallerPoint{
-    height: 44px;
-    top: 27px;
-    padding-bottom: 28px;
-    position: relative;
-}
-#smallerPoint:hover{
-    
-    animation: jumpy2 2s infinite linear;
-}
-.map4G{
-    padding: 50px 0;
-}
+
 .explain4G{
     padding: 50px 0;
 }
@@ -336,27 +267,7 @@ p, h2{
     padding-top: 3px;
     max-width: 340px;
 }
-.TC{
-    font-family: 'MB Empire-Book', sans-serif;
-    padding: 5px;
-    cursor: pointer;
-    width: 170px;
-    color: #01adaa;
-}
-.TC span{
-    transform: rotate(90deg);
-    display: inline-block;
-    top: 2px;
-    position: relative;
-}
-.terms{
-    opacity: 0;
 
-    font-size: 0.9em;
-}
-.termsVis{
-    font-size: 0.9em;
-}
 .aequosImg img{
     width: 100%;
 }
@@ -395,7 +306,6 @@ footer{
 }
 .foot{
     padding: 20px;
-    /* max-width: 250px; */
     max-width: 186px;
 }
 .foot h2{
@@ -464,32 +374,7 @@ footer{
     right: 0;
     bottom: 0;
 }
-#whiteline{
-    position: absolute;
-    left: 239px;
-    top: 374px;
-}
-#whiteline2{
-    position: absolute;
-    left: 239px;
-    top: 374px;
-}
 
-
-@media screen and (min-width: 375px){
-    #whiteline{
-        position: relative;
-        top: 39px;
-        float: right;
-        left: 23px;
-    }
-    #whiteline2{
-        position: relative;
-        top: 28px;
-        float: right;
-        left: 23px;
-    }
-}
 
 
 
@@ -519,16 +404,6 @@ footer{
     }
     .packagesCont{
         padding: 50px;
-    }
-    #whiteline{
-        position: absolute;
-        left: 264px;
-        top: 474px;
-    }
-    #whiteline2{
-        position: absolute;
-        left: 264px;
-        top: 474px;
     }
     #footerLogo{
         width: auto;
@@ -586,32 +461,7 @@ footer{
     .btn{
         margin: 46px auto;
     }
-    .mapSection{
-        background-image: url("images/map2-compressor.png");
-    }
-    .mapHead{
-        display: flex;
-    }
-    .mapMainTitle h3{
-        padding: 20px 0 0;
-        margin-top: 0;
-        font-size: 2em;
-        max-width: 50px;
-    }
-    .mapMainTitle h2{
-        padding: 0;
-        max-width: 300px;
-    }
-    .mapLocations{
-        display: flex;
-    }
-   .mapSection{
-        background-position: 506px -219px;
-        background-size: 570px;
-    }
-   .map4G{
-       padding: 50px;
-   }
+   
    .businessCont{
        display: flex;
        justify-content: center;
@@ -671,16 +521,6 @@ footer{
        background-position-y: bottom;
        padding-bottom: 140px;
    }
-   #whiteline{
-        position: absolute;
-        left: 399px;
-        top: 374px;
-    }
-    #whiteline2{
-        position: absolute;
-        left: 399px;
-        top: 374px;
-    }
     .package2{
         height: 400px;
     }
@@ -736,9 +576,7 @@ footer{
     .mainText{
         width: 70%;
     }
-    .mapSection{
-        background-position: 610px -219px;
-    }
+
     footer{
         justify-content: flex-start;
     }
