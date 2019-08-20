@@ -70,6 +70,13 @@ header infobar
 /*
 main contents
 */
+
+.cookieinfo-close{
+    padding: 3px !important;
+}
+#collect-chat-launcher-container{
+    bottom: 40px !important;
+}
 .Cont4G{
     text-align: right;
     padding-top: 80px;
